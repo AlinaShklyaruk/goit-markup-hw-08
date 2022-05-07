@@ -8,10 +8,6 @@ body {
   font-family: $main-font;
   background-color: $background-color;
   color: $title-color;
-
-  &.modal-open {
-    overflow: hidden;
-  }
 }
 
 .visually-hidden {
@@ -34,57 +30,28 @@ button {
 .container {
   margin-left: auto;
   margin-right: auto;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-  }
-
-  @media screen and (min-width: $tablet) {
-      width: $tablet;
-  }
-
-  @media screen and (min-width: $desktop) {
-        width: $desktop;
-  }
 }
 
 .section {
-  padding-bottom: 60px;
-  padding-top: 60px;
-
-  @media screen and (min-width: $desktop) {
-      padding-bottom: 94px;
-      padding-top: 94px;
-  }
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .section__title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-color;
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: $desktop) {
-      font-size: 36px;
-      line-height: calc(42 / 36);
-  }
 }
 
 .section__no-padding-top {
   padding-top: 0;
-
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
 }
 
 .section__other-bg {

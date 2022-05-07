@@ -1,20 +1,16 @@
 .logo {
-  font-family: $logo-font;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: $accent-color;
-
-  @media screen and (min-width: $desktop) {
-    font-size: 26px;
-  }
+    font-family: $logo-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+    color: $accent-color;
 }
 
 .logo__dark {
-  color: $dark-text-logo;
+    color: $dark-text-logo;
 }
 
 .logo__light {
-  color: $light-text-logo;
+    color: $light-text-logo;
 }
