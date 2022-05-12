@@ -12,14 +12,14 @@
 }
 
 .team {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
- /*   @media screen and (min-width: $tablet) {
+/*@media screen and (min-width: $tablet) {
         justify-content: space-between;
-    }
-*/
+    }*/
 
     @media screen and (max-width: 1199px) {
         margin-bottom: -30px;
@@ -48,6 +48,7 @@
             margin-right: 30px;
         }
     }
+
 }
 
 .team__title {
