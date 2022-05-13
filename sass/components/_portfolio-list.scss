@@ -23,15 +23,16 @@
 .portfolio {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: -30px;
 
     @media screen and (min-width: $tablet) {
         margin-left: -30px;
-        margin-bottom: -30px;
     }
 }
 
 .portfolio__item {
+
     margin-bottom: 30px;
     background: $white-text-color;
 
@@ -69,6 +70,7 @@
 }
 
 .portfolio__box {
+    flex-grow: 1;
     padding: 20px 24px;
     border-left: 1px solid $portfolio-border-color;
     border-bottom: 1px solid $portfolio-border-color;

@@ -214,6 +214,7 @@ button {
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
+    z-index: 1;
   }
   .menu-container.is-open {
     display: -webkit-box;
@@ -252,7 +253,7 @@ button {
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 1;
+  z-index: 2;
 }
 
 .menu-btn.is-open .icon-cross {
@@ -905,6 +906,12 @@ button {
   color: #212121;
 }
 
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
+
 .features__text {
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -1115,24 +1122,19 @@ button {
 }
 
 .clients {
-  width: 100%;
   margin-bottom: -30px;
+  margin-left: -30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (max-width: 449px) {
-  .clients {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .clients__link {
@@ -1163,27 +1165,32 @@ button {
   border-color: #2196f3;
 }
 
+.clients__item {
+  height: 92px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  /* @media screen and (min-width: $mobile) {
+                            width: 210px;
+                            
+                        }*/
+}
+
 @media screen and (max-width: 767px) {
-  .clients__link {
-    max-width: 210px;
+  .clients__item {
+    width: calc((100% - 60px) / 2);
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .clients__link {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__item {
     width: 226px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .clients__link {
+  .clients__item {
     width: 170px;
   }
-}
-
-.clients__item {
-  height: 92px;
-  margin-bottom: 30px;
 }
 
 .clients__icon {
@@ -1596,13 +1603,15 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio {
     margin-left: -30px;
-    margin-bottom: -30px;
   }
 }
 
@@ -1653,6 +1662,9 @@ button {
 }
 
 .portfolio__box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;

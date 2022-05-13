@@ -34,6 +34,10 @@
     text-align: center;
     text-transform: uppercase;
     color: $title-color;
+
+    @media screen and (min-width: $tablet) {
+        text-align: left;
+    }
 }
 
 .features__text {

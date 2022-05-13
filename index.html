@@ -123,7 +123,7 @@
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-            <form action="" class="callback" autocomplete="off">
+            <form class="callback" autocomplete="off">
               <p class="callback-title">
                 Оставьте свои данные, мы вам перезвоним
               </p>
@@ -253,6 +253,10 @@
           <ul class="works">
             <li class="works__item">
               <img
+                srcset="
+                  ./images/programer-working-his-desk-office.jpg    1x,
+                  ./images/programer-working-his-desk-office@2x.jpg 2x
+                "
                 src="images/programer-working-his-desk-office.jpg"
                 alt="programer-working-his-desk-office"
                 width="370"
@@ -261,6 +265,10 @@
             </li>
             <li class="works__item">
               <img
+                srcset="
+                  ./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones.jpg    1x,
+                  ./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones@2x.jpg 2x
+                "
                 src="images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones.jpg"
                 alt="web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones"
                 width="370"
@@ -269,6 +277,10 @@
             </li>
             <li class="works__item">
               <img
+                srcset="
+                  ./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet.jpg    1x,
+                  ./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet@2x.jpg 2x
+                "
                 src="images/creative-artist-web-design-with-working-colour-selection-graphic-tablet.jpg"
                 alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet"
                 width="370"
@@ -284,12 +296,34 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                src="images/product-designer-photo.jpg"
-                alt="Игорь Демьяненко - Product Designer"
-                width="270"
-                class="team__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/product-designer-photo.jpg    1x,
+                    ./images/product-designer-photo@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/product-designer-photo-tablet.jpg    1x,
+                    ./images/product-designer-photo-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/product-designer-photo-mobile.jpg    1x,
+                    ./images/product-designer-photo-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="images/product-designer-photo.jpg"
+                  alt="Игорь Демьяненко - Product Designer"
+                  class="team__photo"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
@@ -326,12 +360,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="images/frontend_developer-photo.jpg"
-                alt="Ольга Репина - Frontend Developer"
-                width="270"
-                class="team__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/frontend_developer-photo.jpg    1x,
+                    ./images/frontend_developer-photo@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/frontend_developer-photo-tablet.jpg    1x,
+                    ./images/frontend_developer-photo-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/frontend_developer-photo-mobile.jpg    1x,
+                    ./images/frontend_developer-photo-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="images/frontend_developer-photo.jpg"
+                  alt="Ольга Репина - Frontend Developer"
+                  class="team__photo"
+              /></picture>
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -368,12 +420,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="images/marketing-photo.jpg"
-                alt="Николай Тарасов - Marketing"
-                width="270"
-                class="team__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/marketing-photo.jpg    1x,
+                    ./images/marketing-photo@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/marketing-photo-tablet.jpg    1x,
+                    ./images/marketing-photo-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/marketing-photo-mobile.jpg    1x,
+                    ./images/marketing-photo-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="images/marketing-photo.jpg"
+                  alt="Николай Тарасов - Marketing"
+                  class="team__photo"
+              /></picture>
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -410,12 +480,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="images/ui-designer-photo.jpg"
-                alt="Михаил Ермаков - UI Designer"
-                width="270"
-                class="team__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ui-designer-photo.jpg    1x,
+                    ./images/ui-designer-photo@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/ui-designer-photo-tablet.jpg    1x,
+                    ./images/ui-designer-photo-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/ui-designer-photo-mobile.jpg    1x,
+                    ./images/ui-designer-photo-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="images/ui-designer-photo.jpg"
+                  alt="Михаил Ермаков - UI Designer"
+                  class="team__photo"
+              /></picture>
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>
@@ -573,13 +661,12 @@
         </div>
 
         <div class="subscribe">
-          <form action="" class="subscribe-form">
+          <form class="subscribe-form">
             <p class="subscribe-form__text">Подпишитесь на рассылку</p>
             <div class="subscribe-form__field">
               <input
                 type="email"
                 name="email"
-                id="email"
                 placeholder="E-mail"
                 class="subscribe-form__input"
               />
